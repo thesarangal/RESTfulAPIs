@@ -78,7 +78,7 @@ import express from 'express'
 
 3. Nodemon - For Development Only
 
-```
+```code
 npm i nodemon -D
 ```
 
