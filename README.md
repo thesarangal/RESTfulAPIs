@@ -4,7 +4,7 @@ Learning Practices for RESTful APIs in NodeJS
 
 REST APIs provide a flexible, lightweight way to integrate applications, and have emerged as the most common method for connecting components in microservices architectures.
 
-### API
+## API
 
 An API, or application programming interface, is a set of rules that define how applications or devices can connect to and communicate with each other.
 
@@ -42,56 +42,90 @@ REST APIs usually send static resources, but in certain cases, responses can als
 
 ### Implementation
 
-#### Step Project
+#### 1. Step Project
 
-##### Initialization
+##### A. Initialization
 
-```
+```code
 npm init -y
 ```
 
-##### Install Modules
+##### B. Install Modules
 
-1. Express
+- Express
 
-```
+```code
 npm install express
 ```
 
-2. ESM - Adopt ES6 Import Structure
+- ESM Adopt ES6 Import Structure
 
-```
+```code
 npm i esm
 ```
 
 After using ESM, following syntax
 
-```
+```code
 const express = require('express')
 ```
 
 will be written as
 
-```
+```code
 import express from 'express'
 ```
 
-3. Nodemon - For Development Only
+- Nodemon - For Development Only
 
 ```code
 npm i nodemon -D
 ```
 
-4. dotenv
+- dotenv
 Dotenv is a zero-dependency module that loads environment variables from a .env file into process.env
 
-```bash
+```code
 npm i dotenv
 ```
 
-##### .env setup
+- joi
+The most powerful schema description language and data validator for JavaScript.
+
+```code
+npm i joi
+```
+
+- mongoose
+Mongoose is an Object Data Modeling (ODM) library for MongoDB and Node. js. It manages relationships between data, provides schema validation, and is used to translate between objects in code and the representation of those objects in MongoDB.
+
+```code
+npm i mongoose
+```
+
+- bcrypt
+A library to help you hash passwords.
+
+```code
+npm i bcrypt
+```
+
+- jsonwebtoken
+A library to help you hash passwords.
+
+```code
+npm i jsonwebtoken
+```
+
+#### 2. .ENV setup
 
 Object destruction of .ENV with /config/index.js
+
+#### 3. Make ROUTES
+
+#### 4. Make Controllers
+
+#### 5. Make Middlewares
 
 ##### References
 
