@@ -2,7 +2,7 @@
 
 Learning Practices for RESTful APIs in NodeJS
 
-REST APIs provide a flexible, lightweight way to integrate applications, and have emerged as the most common method for connecting components in microservices architectures.
+REST APIs provide a flexible, lightweight way to integrate applications, and have emerged as the most common method for connecting components in micro services architectures.
 
 ## API
 
@@ -104,11 +104,15 @@ npm i mongoose
 ```
 
 - bcrypt
-A library to help you hash passwords.
+A library to help you hash passwords. This module contains an implementation of the bcrypt password hashing algorithm and nothing else.
 
 ```code
 npm i bcrypt
 ```
+
+Alternative: cryptojs
+
+- Use bcrypt where you want to do slow and computationally expensive hashing -- this will generally be for hashes where you really don't want an attacker to be able to reverse the hash, e.g. user passwords. Use native crypto for everything else.
 
 - jsonwebtoken
 A library to help you hash passwords.
