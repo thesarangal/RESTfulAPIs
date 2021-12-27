@@ -20,8 +20,9 @@ const loginController = {
             return next(error)
         }
 
-        // Check weather email is already exists or not
         try {
+
+            // Get Record based on Email Id
             const user = await User.findOne({ email: req.body.email })
 
             if(!user){

@@ -18,6 +18,19 @@ class JwtService {
     static sign(payload, expiry = '60s', secret = JWT_SECRET) {
         return jwt.sign(payload, secret, { expiresIn: expiry })
     }
+
+    /**
+     * Verify Token
+     *
+     * @static
+     * @param {*} token JWT Token
+     * @param {*} [secret=JWT_SECRET] Secret Key for JWT
+     * @returns {*} 
+     * @memberof JwtService
+     */
+    static verify(token, secret = JWT_SECRET) {
+        return jwt.verify(token, secret)
+    }
 }
 
 export default JwtService

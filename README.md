@@ -125,11 +125,35 @@ npm i jsonwebtoken
 
 Object destruction of .ENV with /config/index.js
 
-#### 3. Make ROUTES
+#### 3. Make ROUTES for Requests
+
+Directory 'routes/index.js'
 
 #### 4. Make Controllers
 
+Directory 'controllers/index.js'
+
 #### 5. Make Middlewares
+
+To handle Errors and Authentication Services.
+
+### APIs Developed
+
+Main route ('/api')
+
+- [+] Register a user. (End Point: '/register'; Controller: 'controllers/auth/registerControllers.js')
+- [+] Login a user. (End Point: '/login'; Controller: 'controllers/auth/loginControllers.js')
+- [+] Get own profile. (End Point: '/me'; Controller: 'controllers/auth/userControllers.js')
+- [] Refresh the token.
+- [] Logout the user.
+- [] Add new product.
+- [] Update a product.
+- [] Get all products.
+- [] Get a single product.
+- [] Delete a product.
+
+Note: [+] means developed, [] means not developed yet.
+
 
 ##### References
 
