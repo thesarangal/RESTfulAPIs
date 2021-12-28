@@ -23,7 +23,7 @@ class JwtService {
      * Verify Token
      *
      * @static
-     * @param {*} token JWT Token
+     * @param {*} token JWT
      * @param {*} [secret=JWT_SECRET] Secret Key for JWT
      * @returns {*} 
      * @memberof JwtService

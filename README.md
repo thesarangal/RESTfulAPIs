@@ -96,7 +96,7 @@ The most powerful schema description language and data validator for JavaScript.
 npm i joi
 ```
 
-###### P4RM's ODM 
+###### P4RM's ODM
 
 Object Document Mapper is built for NodeJS and provides transparent persistence for JavaScript objects to MongoDB database.
 
@@ -118,7 +118,7 @@ npm i bcrypt
 
 Alternative: cryptojs
 
-- Use bcrypt where you want to do slow and computationally expensive hashing -- this will generally be for hashes where you really don't want an attacker to be able to reverse the hash, e.g. user passwords. Use native crypto for everything else.
+Use bcrypt where you want to do slow and computationally expensive hashing -- this will generally be for hashes where you really don't want an attacker to be able to reverse the hash, e.g. user passwords. Use native crypto for everything else.
 
 - jsonwebtoken
 A library to help you hash passwords.

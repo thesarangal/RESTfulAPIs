@@ -12,7 +12,9 @@ const userSchema = new Schema({
         }
     },
     email: {
-        type: String, required: true, unique: true
+        type: String,
+        required: true,
+        unique: true // It will also enable indexing
     },
     password: {
         type: String, required: true
