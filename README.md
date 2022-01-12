@@ -150,7 +150,7 @@ Main route ('/api')
 - [+] Register a user. (End Point: '/register'; Controller: 'controllers/auth/registerControllers.js')
 - [+] Login a user. (End Point: '/login'; Controller: 'controllers/auth/loginControllers.js')
 - [+] Get own profile. (End Point: '/me'; Controller: 'controllers/auth/userControllers.js')
-- [] Refresh the token.
+- [+] Refresh the token.
 - [] Logout the user.
 - [] Add new product.
 - [] Update a product.
