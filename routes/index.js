@@ -1,5 +1,5 @@
 import express from 'express'
-import { registerController, loginController, userController } from '../controllers'
+import { registerController, loginController, userController, refreshController } from '../controllers'
 import authHandler from '../middlewares/authHandler'
 
 // Initialize Router
@@ -13,5 +13,8 @@ router.post('/login', loginController.login)
 
 // Profile Route
 router.get('/me', authHandler, userController.profile)
+
+// Refresh Controller Route
+router.post('/refresh', refreshController.refresh)
 
 export default router 
