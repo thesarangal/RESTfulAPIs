@@ -17,4 +17,7 @@ router.get('/me', authHandler, userController.profile)
 // Refresh Controller Route
 router.post('/refresh', refreshController.refresh)
 
+// Logout Route
+router.post('/logout', authHandler, loginController.logout)
+
 export default router 
